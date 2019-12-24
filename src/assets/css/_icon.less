@@ -1,0 +1,108 @@
+.icon-background {
+  background-repeat: no-repeat;
+  background-position: center;
+  display: inline-block;
+}
+
+.icon-delete {
+  &:extend(.icon-background);
+  background-image: url('../images/icon_delete.png') !important;
+  cursor: pointer;
+  width: 45px;
+  height: 45px;
+  background-size: 45px;
+}
+
+.icon-copy {
+  &:extend(.icon-background);
+  background-image: url('../ico/icon_copy.png') !important;
+  cursor: pointer;
+  width: 45px;
+  height: 45px;
+  background-size: 45px;
+}
+
+.icon-print {
+  &:extend(.icon-background);
+  background-image: url('../ico/icon_print.png') !important;
+  cursor: pointer;
+  width: 45px;
+  height: 45px;
+  background-size: 45px;
+}
+
+.icon-cancel {
+  &:extend(.icon-background);
+  background-image: url('../images/icon_cancel.png') !important;
+  cursor: pointer;
+  width: 45px;
+  height: 45px;
+  background-size: 45px;
+}
+
+.icon-close {
+  &:extend(.icon-background);
+  background-image: url('../ico/icon_close.png') !important;
+  cursor: pointer;
+  width: 45px;
+  height: 45px;
+  background-size: 45px;
+}
+
+.icon-edit {
+  &:extend(.icon-background);
+  background-image: url('../images/icon_edit.png') !important;
+  cursor: pointer;
+  width: 65px;
+  height: 65px;
+  background-size: 65px;
+}
+
+.icon-confirm {
+  &:extend(.icon-background);
+  background-image: url('../images/icon_confirm.png') !important;
+  cursor: pointer;
+  width: 65px;
+  height: 59px;
+  background-size: 65px;
+}
+
+//应用：操作icon
+.mixin-icon() {
+    display: inline-block;
+    border: none;
+    cursor: pointer;
+    &.el-button {
+        border: none!important;
+        background-color: transparent!important;
+    }
+    &.el-button:active, .el-button:hover, .el-button:focus, .el-button:visited {
+        background-color: transparent!important;
+    }
+}
+
+.icon-setting-1 {
+    width: 58px;
+    height: 58px;
+    .mixin-icon();
+}
+
+.icon-setting-2 {
+    width: 52px;
+    height: 52px;
+    .mixin-icon();
+}
+
+.icon-setting-3 {
+    width: 136px;
+    height: 58px;
+    .mixin-icon();
+    background-size: 100%;
+}
+
+.icon-setting-4 {
+    width: 24px;
+    height: 15px;
+    .mixin-icon();
+    background-size: 100%;
+}

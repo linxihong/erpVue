@@ -1,0 +1,390 @@
+//element-ui
+.zl-el-form-item {
+  .el-form-item--small.el-form-item {
+    margin-bottom: 5px;
+    margin-top: 5px;
+  }
+}
+.el-date-editor.el-input, .el-date-editor.el-input__inner {
+  width: 200px;
+}
+.el-form-item__content {
+  .el-textarea.is-disabled .el-textarea__inner {
+    cursor: auto;
+    color: #606266;
+    font-weight: bold!important;
+  }
+  .el-select,.el-cascader{
+    .el-input {
+      .el-input__inner[readonly="readonly"]{
+        cursor: pointer;
+        background: #fff;
+      }
+      .el-input__inner[disabled="disabled"] {
+        font-weight: bold!important;
+        cursor: auto;
+        background: #eee;
+        &:hover {
+          color: #e6a23c;
+          text-shadow: 3px 3px 3px #ccc;
+        }
+      }
+    }
+  }
+  .el-input {
+    .el-input__inner[readonly="readonly"]{
+      font-weight: bold!important;
+      cursor: auto;
+      background: #eee;
+      &:hover {
+        color: #e6a23c;
+        text-shadow: 3px 3px 3px #ccc;
+      }
+    }
+  }
+}
+.el-input.is-disabled .el-input__inner {
+  color: #606266;
+  font-weight: bold;
+}
+.el-input--suffix .el-input__inner {
+  //border: 1px solid #ccc!important;
+  padding-right: 15px;
+}
+.content-form {
+  .el-form-item {
+    margin-bottom: 10px;
+  }
+}
+.content-table {
+  height: calc(~"100% - 340px");
+  margin: 0 10px 15px auto;
+  .cell {
+    min-height: 24px;
+    line-height: 24px;
+    padding-left: 0;
+    padding-right: 0;
+    .el-input__inner {
+      height: 24px;
+      line-height: 24px;
+      border-radius: 0;
+    }
+  }
+  td {
+    padding: 0;
+  }
+}
+//common
+.color-I {
+  color: #e6a23c;
+}
+.color-II {
+  color: #2aafe8;
+}
+.color-III {
+  color: #909399;
+}
+.color-IV {
+  color: #67C23A;
+}
+.console-width-100 {
+  width: 100% !important;
+}
+.console-height-100 {
+  height: 100% !important;
+}
+.console-pl0 {
+  padding-left: 0;
+}
+.console-pr0 {
+  padding-right: 0;
+}
+.console-pt0 {
+  padding-top: 0;
+}
+.console-pb0 {
+  padding-bottom: 0;
+}
+.console-p0 {
+  padding: 0;
+}
+.console-ml0 {
+  margin-left: 0;
+}
+.console-mr0 {
+  margin-right: 0;
+}
+.console-mt0 {
+  margin-top: 0;
+}
+.console-mb0 {
+  margin-bottom: 0;
+}
+.console-m0 {
+  margin: 0;
+}
+.console-mb4 {
+  margin-bottom: 16px;
+}
+.console-mt5 {
+  margin-top: 20px;
+}
+.console-mb5 {
+  margin-bottom: 20px;
+}
+.console-mr5 {
+  margin-right: 20px;
+}
+.console-ml8 {
+  margin-left: 32px;
+}
+.console-mr8 {
+  margin-right: 32px;
+}
+.zl-wh100 {
+  width: 100%;
+  height: 100%;
+}
+.zl-w100 {
+  width: 100%;
+}
+.zl-h100 {
+  height: 100%;
+}
+.zl-m10 {
+  margin: 10px;
+}
+.zl-mt10{
+  margin-top: 10px;
+}
+.zl-mb10{
+  margin-bottom: 10px;
+}
+.data-header {
+  font-weight: 600;
+  font-family: "Microsoft YaHei UI";
+  margin: 0;
+}
+.plus-title {
+  .el-collapse-item__header {
+    font-size: 16px;
+    font-weight: 600;
+    user-select:none;
+    &:before {
+      content: '';
+      border-left: 5px solid #2aafe8;
+      margin-right: 5px;
+    }
+  }
+}
+.block-title {
+  font-weight: bold;
+  &:before {
+    content: '';
+    border-left: 5px solid #2aafe8;
+    margin-right: 5px;
+  }
+}
+.config-data-wrap {
+  display: flex;
+  width: 100%;
+  .el-card {
+    .el-card__body {
+      height: 100%;
+      padding: 10px!important;
+    }
+  }
+}
+.table-wrap {
+  height: calc(~"100% - 80px");
+  margin: 10px auto;
+  .cell {
+    min-height: 18px;
+    line-height: 18px;
+    padding-left: 8px;
+    padding-right: 8px;
+  }
+  td {
+    padding: 4px 0;
+  }
+}
+.search-wrap {
+  margin: 10px auto;
+}
+.search-input {
+  width: 180px;
+}
+.tree-wrap {
+  height: calc(~"100% - 100px");
+  overflow-y: auto;
+  margin-top: 15px;
+}
+.btn-wrap {
+  margin-bottom: 15px;
+}
+.forbit-wrap {
+  position: absolute;
+  z-index: 100;
+  cursor: not-allowed;
+  background: rgba(0,0,0,0.1);
+}
+.service-forbit {
+  min-width: 300px;
+  max-width: 300px;
+  height: calc(~"100% - 40px");
+}
+.source-forbit {
+  min-width: 300px;
+  max-width: 300px;
+  height: calc(~"100% - 70px");
+}
+.tight-table {
+  .cell {
+    min-height: 24px;
+    line-height: 24px;
+    padding-left: 0;
+    padding-right: 0;
+    .el-input__inner {
+      height: 24px;
+      line-height: 24px;
+      border-radius: 0;
+    }
+  }
+  td {
+    padding: 0;
+  }
+}
+.tab-wrapI {
+  .collapse-title {
+    display: inline-flex;
+    .collapse-btn {
+      margin-left: 10px;
+      display: inline-flex;
+      align-items: center;
+    }
+  }
+}
+.tab-wrapII {
+  display: flex;
+  .left-content {
+    min-width: 300px;
+    max-width: 300px;
+    height: 100%;
+    margin-right: 15px;
+  }
+  .right-content {
+    width: calc(~"100% - 315px");
+    height: 100%;
+  }
+}
+.right-content {
+  .el-tabs__content {
+    height: 100%;
+    .el-tab-pane {
+      height: 100%;
+      .tab-wrapI,.tab-wrapII {
+        .collapse-wrap {
+          .el-collapse-item__content {
+            padding-bottom: 0;
+          }
+          .el-collapse-item__header {
+            height: 40px;
+            line-height: 40px;
+          }
+          .el-form-item {
+            margin-right: 0;
+          }
+          height: calc(~"100% - 47px");
+          overflow-x: hidden;
+          overflow-y: auto;
+        }
+      }
+      .tab-wrapI {
+        height: 100%;
+      }
+      .tab-wrapII {
+        height: calc(~"100% - 40px");
+      }
+    }
+  }
+}
+.icon-item {
+  width: 18px;
+  height: 18px;
+  display: inline-block;
+  border: none;
+  cursor: pointer;
+  background-size:cover;
+}
+.table-icon {
+  cursor: pointer;
+  font-size: 18px;
+  color: #ff4804;
+  &.plus-icon {
+    color: rgb(255, 208, 75);
+  }
+  &.back-icon {
+    color: #ff4804;
+  }
+}
+.revert-icon {
+  background: url(ico/revert.png);
+  background-size: 100%;
+}
+
+//list-temp
+.list-wrapper {
+  padding: 20px;
+  display: flex;
+  .el-card__body {
+    height: 100%;
+    padding: 10px!important;
+  }
+}
+.left-content {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  min-width: 300px;
+  max-width: 300px;
+  height: 100%;
+  margin-right: 20px;
+  .left-top-content {
+    height: 35%;
+    margin-bottom: 4%;
+  }
+  .left-bottom-content {
+    height: 65%;
+  }
+}
+.right-content {
+  width: calc(~"100% - 320px");
+  .el-tabs {
+    height: 100%;
+  }
+}
+
+//tab-temp
+.tab-wrapper {
+  width: 100%;
+  .el-tabs {
+    height: 100%;
+  }
+}
+
+//tree-temp
+.tree-wrapper {
+  display: flex;
+  .tree-left-div {
+    min-width: 300px;
+    max-width: 300px;
+    margin-right: 20px;
+    .el-card__body {
+      padding: 10px;
+    }
+  }
+  .tree-right-div {
+    width: calc(~"100% - 320px");
+  }
+}
+

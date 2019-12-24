@@ -1,0 +1,38 @@
+
+@cyan: #04C371;
+.btn-cyan {
+  color: #fff;
+  background-color: @cyan;
+  border-color: @cyan;
+  &:active, &:hover, &:focus, &:visited {
+    color: #fff;
+    border-color: lighten(@cyan, 4%);
+    background-color: lighten(@cyan, 4%);
+    outline: 0;
+  }
+  &:active {
+    border-color: darken(@cyan, 2%);
+    background-color: darken(@cyan, 2%);
+  }
+}
+
+.btn-cyan-plain {
+  color: #04C371;
+}
+
+
+.generate-btn-size(@n, @i:1) when (@i =< @n) {
+  .btn-h@{i} {
+    height: @i * 1px;
+  }
+  .btn-w@{i} {
+    width: @i * 1px;
+  }
+  .btn-size@{i} {
+    height: @i * 1px;
+    width: @i * 1px;
+  }
+  .generate-btn-size(@n, (@i + 1))
+}
+
+.generate-btn-size(100);
